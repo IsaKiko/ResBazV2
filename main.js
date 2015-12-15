@@ -100,7 +100,7 @@ page_viz.append("div").text("Web Vizardry!").style("font-family","sans-serif")
 		.style("font-size","2em").style("color","white")
 		.style("padding","20px");
 
-page_viz.append("div").text("By tapping into the brilliant little abstract visual computer in our brains, visualisations can not only summarise and make navigable and comprehensible otherwise boring or impenetrable data, but can also capture the essence of a topic or question and close the understanding gap so many of us find hard to bridge").style("font-family","sans-serif")
+page_viz.append("div").text("By tapping into the brilliant little abstract visual computer in our brains, visualisations can not only summarise and make navigable and comprehensible otherwise boring or impenetrable data, but can also capture the essence of a topic or question and close the understanding gap so many of us find hard to bridge.").style("font-family","sans-serif")
 		.style("font-size","1em").style("color","white")
 		.style("padding","20px");
 
