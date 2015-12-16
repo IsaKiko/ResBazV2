@@ -21,8 +21,8 @@ var speech_h = 80;
 
 var twi_viz = d3.select("#twit_resplat").style("display","none")
 .style("position","absolute")
-.style("top","350px")
-.style("left","10px");
+.style("top","330px")
+.style("left","20px");
 
 d3.selection.prototype.moveToFront = function(){
 	return this.each(function(){
@@ -86,15 +86,9 @@ viz.moveToFront();
 
 // WRANGLER
 speech_wra = d3.select("body").append("div")
-		.style("background-color","white").style("position","absolute")
 		.style("top","40px").style("left","270px")
-		.style("padding","10px")
 		.text("I am rounding up and analysing data!").moveToFront()
-		.style("border-radius","5px")
-		.style("opacity",0)
-		.style("width","100px")
-		.style("font-family","sans-serif")
-		.attr("class","hidden");
+		.attr("class","hidden speechbubble");
 
 page_wra = d3.select("body").append("div").attr("class","wra_div")
 				.style("width",mommy_w+"px")
@@ -106,34 +100,30 @@ page_wra = d3.select("body").append("div").attr("class","wra_div")
 
 page_wra.append("div").text("Data Wrangling!").style("font-family","sans-serif")
 		.style("font-size","2em").style("color","white")
-		.style("padding","20px");
+		.style("padding","25px");
 
 page_wra.append("div").text("blurb")
 		.style("font-family","sans-serif")
 		.style("font-size","1em").style("color","white")
-		.style("padding","20px");
+		.style("padding","25px");
 
 page_wra.append("img").attr("src","kerry.jpg")
-		.style("width","80px")
+		.style("width","65px")
 		.style("border-radius","100px")
-		.style("padding","20px");
+		.style("padding","25px");
 
 page_wra.append("img").attr("src","pippa.jpg")
-		.style("width","80px")
+		.style("width","65px")
 		.style("border-radius","100px")
-		.style("padding","20px");
+		.style("padding","25px");
+
+
 
 // CADVENTURER
 speech_cad = d3.select("body").append("div")
-		.style("background-color","white").style("position","absolute")
 		.style("top","30px").style("left","120px")
-		.style("padding","10px")
 		.text("I am playing and printing in 3D!").moveToFront()
-		.style("border-radius","5px")
-		.style("opacity",0)
-		.style("width","100px")
-		.style("font-family","sans-serif")
-		.attr("class","hidden");
+		.attr("class","hidden speechbubble");
 
 page_cad = d3.select("body").append("div").attr("class","cad_div")
 				.style("width",mommy_w+"px")
@@ -145,34 +135,28 @@ page_cad = d3.select("body").append("div").attr("class","cad_div")
 
 page_cad.append("div").text("Come on a CADventure!").style("font-family","sans-serif")
 		.style("font-size","2em").style("color","white")
-		.style("padding","20px");
+		.style("padding","25px");
 
 page_cad.append("div").text("blurb.")
 		.style("font-family","sans-serif")
 		.style("font-size","1em").style("color","white")
-		.style("padding","20px");
+		.style("padding","25px");
 
 page_cad.append("img").attr("src","paul.jpg")
-		.style("width","80px")
+		.style("width","65px")
 		.style("border-radius","100px")
-		.style("padding","20px");
+		.style("padding","25px");
 
 page_cad.append("img").attr("src","louise.jpg")
-		.style("width","80px")
+		.style("width","65px")
 		.style("border-radius","100px")
-		.style("padding","20px");
+		.style("padding","25px");
 
 // DAVINCI
 speech_dav = d3.select("body").append("div")
-		.style("background-color","white").style("position","absolute")
 		.style("top","330px").style("left","130px")
-		.style("padding","10px")
 		.text("I am mining and analysing social data!").moveToFront()
-		.style("border-radius","5px")
-		.style("opacity",0)
-		.style("width","100px")
-		.style("font-family","sans-serif")
-		.attr("class","hidden");
+		.attr("class","hidden speechbubble");
 
 page_dav = d3.select("body").append("div").attr("class","dav_div")
 				.style("width",mommy_w+"px")
@@ -184,35 +168,29 @@ page_dav = d3.select("body").append("div").attr("class","dav_div")
 
 page_dav.append("div").text("Text mining!").style("font-family","sans-serif")
 		.style("font-size","2em").style("color","white")
-		.style("padding","20px");
+		.style("padding","25px");
 
 page_dav.append("div").text("blurb.")
 		.style("font-family","sans-serif")
 		.style("font-size","1em").style("color","white")
-		.style("padding","20px");
+		.style("padding","25px");
 
 page_dav.append("img").attr("src","kim.jpg")
-		.style("width","80px")
+		.style("width","65px")
 		.style("border-radius","100px")
-		.style("padding","20px");
+		.style("padding","25px");
 
 page_dav.append("img").attr("src","yuandra.jpg")
-		.style("width","80px")
+		.style("width","65px")
 		.style("border-radius","100px")
-		.style("padding","20px");
+		.style("padding","25px");
 
 
 // VIZARD
 speech_viz = d3.select("body").append("div")
-		.style("background-color","white").style("position","absolute")
 		.style("top","340px").style("left","280px")
-		.style("padding","10px")
 		.text("I am visualising data on the web, open and interactive!").moveToFront()
-		.style("border-radius","5px")
-		.style("opacity",0)
-		.style("width","100px")
-		.style("font-family","sans-serif")
-		.attr("class","hidden");
+		.attr("class","hidden speechbubble");
 
 page_viz = d3.select("body").append("div").attr("class","viz_div")
 				.style("width",mommy_w+"px")
@@ -224,21 +202,67 @@ page_viz = d3.select("body").append("div").attr("class","viz_div")
 
 page_viz.append("div").text("Web Vizardry!").style("font-family","sans-serif")
 		.style("font-size","2em").style("color","white")
-		.style("padding","20px");
+		.style("padding","25px");
 
-page_viz.append("div").text("By tapping into the brilliant little abstract visual computer in our brains, visualisations can not only summarise and make navigable and comprehensible otherwise boring or impenetrable data, but can also capture the essence of a topic or question and close the understanding gap so many of us find hard to bridge.").style("font-family","sans-serif")
-		.style("font-size","1em").style("color","white")
-		.style("padding","20px");
+var blurb_div_viz = page_viz.append("div")
+		.style("padding","25px")
+		.style("background-color","#917DB3")
+		.attr("class","blurb_div");
 
-page_viz.append("img").attr("src","isabell.jpg")
-		.style("width","80px")
+blurb_div_viz.append("img").attr("src","isabell.jpg")
+		.style("width","65px")
+		.style("border-radius","100px");
+
+blurb_div_viz.append("span").text("By tapping into the brilliant little abstract visual computer in our brains, visualisations can not only summarise and make navigable and comprehensible otherwise boring or impenetrable data, but can also capture the essence of a topic or question and close the understanding gap so many of us find hard to bridge.")
+		.attr("class","blurb");
+
+var footer_viz = page_viz.append("ul").attr("class","footer");
+
+footer_viz.append("li")
+		.append("a").text("MATERIAL")
+		.attr("href","https://isakiko.github.io/D3-visualising-data");
+
+footer_viz.append("li").attr("class","vertline");
+
+footer_viz.append("li")
+		.append("a").text("COMMUNITY")
+		.attr("href","https://www.facebook.com/groups/1690932847854289/");
+
+footer_viz.append("li").attr("class","vertline");
+
+
+var teambtn_viz = footer_viz.append("li")
+	  .text("TEAM").attr("class","link");
+
+
+var mainbtn_viz = footer_viz.append("li")
+	  .text("MAIN").attr("class","link")
+	  .style("margin-left","50px");
+
+footer_viz.append("li").attr("class","vertline");
+
+
+var teampage_viz = d3.select("body").append("div").attr("class","viz_div")
+				.style("width",mommy_w+"px")
+				.style("position","absolute")
+				.style("top","10px")
+				.style("left","510px");
+
+
+teampage_viz.append("div").text("Vizards").style("font-family","sans-serif")
+		.style("font-size","2em").style("color","white")
+		.style("padding","25px");
+
+teampage_viz.append("img").attr("src","isabell.jpg")
+		.style("width","65px")
 		.style("border-radius","100px")
 		.style("padding","20px");
 
-page_viz.append("img").attr("src","errol.jpg")
-		.style("width","80px")
+teampage_viz.append("img").attr("src","errol.jpg")
+		.style("width","65px")
 		.style("border-radius","100px")
 		.style("padding","20px");
+
 
 
 
@@ -441,7 +465,10 @@ viz.on("click", function(){
 		d3.selectAll(".op7_element").transition().delay(trans_op).duration(trans_op).attr("opacity",.7);
 		circ_viz.transition().duration(trans_exp).attr("r",rad).attr("opacity",opacity);
 
-		page_viz.transition().duration(trans_exp).style("opacity",0);
+
+		teampage_viz.transition().duration(1000).style("left","510px");	
+
+		page_viz.transition().duration(trans_exp).style("opacity",0).style("left","10px");
 		page_viz.style("visibility","hidden");
 
 		viz_state = 1;
@@ -461,4 +488,14 @@ viz.on("mouseover", function(){
 })
 viz.on("mouseout", function(){
 	speech_viz.transition().duration(trans_sp).style("opacity",0);
+})
+
+teambtn_viz.on("click",function(){
+	page_viz.transition().duration(1000).style("left","-500px");
+	teampage_viz.transition().duration(1000).style("left","10px");
+})
+
+mainbtn_viz.on("click", function(){
+	page_viz.transition().duration(1000).style("left","10px");
+	teampage_viz.transition().duration(1000).style("left","510px");	
 })

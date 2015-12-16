@@ -1,4 +1,74 @@
+body{
+	background-color: WhiteSmoke;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;	
+	color: white;
+}
+
 .platy:hover
 {
+	cursor: pointer;
+}
+
+.blurb{
+	font-family: sans-serif;
+    font-size: .8em;
+    color: white;
+    position: absolute;
+    left: 140px;
+    width: 330px;
+}
+
+.blurb_div{
+	border-radius: 10px;
+	margin: 10px;
+}
+
+.speechbubble{
+    color: #00779C;
+    opacity:0;
+	width :100px;
+	padding: 10px;
+	background: white;
+	position: absolute;
+	border-radius: 5px;
+
+}
+
+.mommy{
+	background-color: white;
+}
+
+.footer{    
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-left: 30px;
+	margin-right: 30px;
+    list-style: none;
+    font-size: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width:600px;
+}
+
+li.vertline{
+    border-right: 1px solid #FFFFFF;
+    width: 0;
+}
+
+a{
+	color:white;
+	text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+.link:hover{
 	cursor: pointer;
 }
